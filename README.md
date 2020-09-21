@@ -34,4 +34,5 @@ git clone https://github.com/kiwiguard/gulp_automation.git
 (sudo) npm install
 ```
 4. Start Gulp
+
 Start by running the ```gulp``` command. This will run all *tasks* in predetermined order, create the 'pub'-files and start Browsersync for livereload.

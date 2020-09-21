@@ -2,8 +2,10 @@
 const browserSync = require('browser-sync').create();
 const {src, dest, watch, series, parallel} = require('gulp');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify-es').default;
 const imgmin = require('gulp-imagemin');
+const terser = require('gulp-terser');
+const sourcemaps = require('gulp-sourcemaps');
+const cleanCSS = require('gulp-clean-css');
 
 
 /* Sökvägar */
@@ -24,8 +26,10 @@ function copyHTML() {
 /* Sammanslå och minifiera JS filer */
 function jsTask() {
     return src(files.jsPath)
-        .pipe(concat('main.js'))
-        .pipe(uglify())
+        .pipe(sourcemaps.init())
+            .pipe(concat('main.js'))
+            .pipe(terser())
+        .pipe(sourcemaps.write('./'))
         .pipe(dest('pub/js')
     );
 }
@@ -33,7 +37,10 @@ function jsTask() {
 /* Sammanslå och minifiera CSS filer */
 function cssTask() {
     return src(files.cssPath)
-        .pipe(concat('styles.css'))
+        .pipe(sourcemaps.init())
+            .pipe(concat('styles.css'))
+            .pipe(cleanCSS())
+        .pipe(sourcemaps.write('./'))
         .pipe(dest('pub/css')
     );
 }

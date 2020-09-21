@@ -25,7 +25,6 @@ function jsTask() {
     );
 }
 
-
 /* Watcher */
 function watchTask() {
     watch([files.htmlPath, files.jsPath],

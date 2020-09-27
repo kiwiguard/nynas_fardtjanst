@@ -1,0 +1,15 @@
+/* Base SCSS file - Contains variables, utility and mixins */
+
+
+/* Variables */
+$font-stack: Helvetica, sans-serif;
+$primary-color: #fff5ee;
+$font-color: #637373;
+
+
+/* Typography */
+body {
+    background-color: $primary-color;
+    font: 1.6rem $font-stack;
+    color: $font-color;
+}

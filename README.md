@@ -6,6 +6,7 @@ Any edits to project files should be made under 'src', these will automatically 
 
 ## Automated tasks are:
 * Concatenating CSS files into one single .css-file and minimizing files for faster loading. Added sourcemaps for tracking.
+* Concatenating SASS files into one single .css-file and minimizing files for faster loading. Added sourcemaps for tracking.
 * Concatenating JavaScript files into one single .js-file and minimizing files for faster loading. Added sourcemaps for tracking.
 * Compressing images from 'src/image'-folder. Creating smaller filesizes for faster loading.
 * Browsersync - realtime updates of changes to project during development. Displays in browser.
@@ -19,6 +20,7 @@ This automated environment uses the following packages:
 * **gulp-terser** - Minifies JavaScript and ES6 files.
 * **gulp-sourcemaps** - Adds tracking for concatenated CSS and JS files for easy continued development or debugging.
 * **gulp-clean-css** - Minifies CSS files.
+* **gulp-sass** - Convertin SASS to CSS
 
 All packages was picked based on popularity and compatibility. 
 

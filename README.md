@@ -20,7 +20,7 @@ This automated environment uses the following packages:
 * **gulp-terser** - Minifies JavaScript and ES6 files.
 * **gulp-sourcemaps** - Adds tracking for concatenated CSS and JS files for easy continued development or debugging.
 * **gulp-clean-css** - Minifies CSS files.
-* **gulp-sass** - Convertin SASS to CSS
+* **gulp-sass** - Converting SASS to CSS
 
 All packages was picked based on popularity and compatibility. 
 

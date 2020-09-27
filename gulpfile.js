@@ -6,6 +6,8 @@ const imgmin = require('gulp-imagemin');
 const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 
 
 /* Sökvägar */
@@ -13,7 +15,8 @@ const files = {
     htmlPath: "src/**/*.html",
     cssPath: "src/**/*.css",
     jsPath: "src/**/*.js",
-    imgPath: "src/img/*"
+    imgPath: "src/img/*",
+    sassPath: "src/**/*.scss"
 }
 
 /* Kopiera HTML */
@@ -34,11 +37,21 @@ function jsTask() {
     );
 }
 
+/* Konvertera Sass filer */
+function sassTask() {
+    return src(files.sassPath)
+        .pipe(sourcemaps.init())
+            .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+            .pipe(concat('main.css'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(dest('pub/css'))
+}
+
 /* Sammanslå och minifiera CSS filer */
 function cssTask() {
     return src(files.cssPath)
         .pipe(sourcemaps.init())
-            .pipe(concat('styles.css'))
+            .pipe(concat('main.css'))
             .pipe(cleanCSS())
         .pipe(sourcemaps.write('./'))
         .pipe(dest('pub/css')
@@ -65,13 +78,14 @@ function reload() {
     watch(files.htmlPath, copyHTML).on('change', browserSync.reload);
     watch(files.cssPath, cssTask).on('change', browserSync.reload);
     watch(files.jsPath, jsTask).on('change', browserSync.reload);
+    watch(files.sassPath, sassTask).on('change', browserSync.reload);
     watch(['pub', 'pub/css', 'pub/js']).on('change', browserSync.reload);
 }
 
 function watchTask() {
 
-    watch([files.htmlPath, files.jsPath, files.cssPath]),
-        parallel(copyHTML, jsTask, cssTask, imgTask
+    watch([files.htmlPath, files.jsPath, files.cssPath, files.sassPath]),
+        parallel(copyHTML, jsTask, cssTask, imgTask, sassTask
     );
 
     
@@ -79,7 +93,7 @@ function watchTask() {
 
 /* Default task */
 exports.default = series (
-    parallel(copyHTML, jsTask, cssTask, imgTask),
+    parallel(copyHTML, jsTask, cssTask, imgTask, sassTask),
     reload,
     watchTask
 );

@@ -153,6 +153,21 @@ form {
     
 }
 
+.login-help-links {
+    justify-content: space-between;
+}
+
+
+.login-form {
+    width: 452px;
+    margin: 10% auto;
+
+    input[type="text"] {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
 footer {
     background: #373E57;
     height: fit-content;

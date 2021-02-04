@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nynäshamns Färdtjänst</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/index.html">
+            <button class="login-abort-btn margin-top-3"><i class="fa fa-lg fa-times"></i>Avbryt</button>
+        </a>
+
+        <div class="login-form">
+            <h1>Logga in</h1>
+            <form method="GET" action="/profile.html" id="log-in">
+                <label for="personal-number">Personnummer (ÅÅÅÅMMDD-xxx)</label><br>
+                <input type="text" id="personal-number" name="personal-number">
+                <br>
+                <br>
+                <label for="passcode">Lösenkod (6 siffror)</label><br>
+                <input type="text" id="passcode" name="passcode">
+                <br>
+
+                <input type="checkbox" name="save-credentials" class="margin-top-3">
+                <label for="save-credentials">Spara mina uppgifter</label>
+                <br>
+                <button type="submit" form="log-in" value="submit" class="btn-large book-btn margin-top-3">Logga in</button>
+            </form>
+
+            <div class="form-control-group login-help-links">
+                <a href="#">Skapa konto</a>
+                <a href="#">Glömt lösenkod?</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

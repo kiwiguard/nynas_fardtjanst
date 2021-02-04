@@ -60,6 +60,18 @@ hr {
         cursor: pointer;
     }
 }
+
+.login-abort-btn {
+    background-color: #F8F8F8;
+    border: none;
+
+    .fa-times {
+        margin-right: 10px;
+    }
+
+}
+
+
 .main-nav {
     width: 100%;
     align-self: end;

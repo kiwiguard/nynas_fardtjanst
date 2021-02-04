@@ -49,40 +49,55 @@
             </select>
             <br>
             <h4>Från:</h4>
-            <label for="from-adress">Adress</label><br>
-            <input type="text" id="from-adress" name="from-adress">
-            <label for="from-zipcode">Postnummer</label>
-            <input type="text" id="from-zipcode" name="from-zipcode">
+            <div class="form-control-group">
+                <div class="date-time-div">
+                    <label for="from-adress">Adress</label><br>
+                    <input type="text" id="from-adress" name="from-adress">
+                </div>
+                <div class="date-time-div">
+                    <label for="from-zipcode">Postnummer</label><br>
+                    <input type="text" id="from-zipcode" name="from-zipcode">
+                </div>
+            </div>
 
             <h4>Till:</h4>
-            <label for="to-adress">Adress</label><br>
-            <input type="text" id="to-adress" name="to-adress">
-            <label for="to-zipcode">Postnummer</label>
-            <input type="text" id="to-zipcode" name="to-zipcode">
-
+            <div class="form-control-group">
+                <div class="date-time-div">
+                    <label for="to-adress">Adress</label><br>
+                    <input type="text" id="to-adress" name="to-adress">
+                </div>
+                <div class="date-time-div">
+                    <label for="to-zipcode">Postnummer</label><br>
+                    <input type="text" id="to-zipcode" name="to-zipcode">
+                </div>
+            </div>
             <br>
-            <input type="radio" id="return-trip" name="trip-option" value="return-trip">
+            <input type="radio" id="return-trip" name="trip-option" value="return-trip" class="margin-top-3" checked>
             <label for="return-trip">Jag vill åka tur och retur</label>
             <br>
             <input type="radio" id="one-way" name="trip-option" value="one-way">
             <label for="one-way">Jag vill åka enkel väg</label>
             
             <br>
-            <label class="from-date">Utresa</label>
-            <input type="Date" name="from-date">
-            <input type="time" name="from-time">
+            <div class="form-control-group margin-top-3">
+                <div class="date-time-div">
+                    <label class="from-date display-block">Utresa</label>
+                    <input type="Date" name="from-date">
+                    <input type="time" name="from-time">
+                </div>
+                <div class="date-time-div">
+                    <label class="home-date display-block">Hemresa</label>
+                    <input type="Date" name="home-date">
+                    <input type="time" name="home-time">
+                </div>
+            </div>
             <br>
-            <label class="home-date">Hemresa</label>
-            <input type="Date" name="home-date">
-            <input type="time" name="home-time">
-
-            <br>
-            <input type="checkbox" name="save-trip">
+            <input type="checkbox" name="save-trip" class="margin-top-3">
             <label for="save-trip">Spara som återkommande resa</label>
 
             <br>
             <h4>Har du sällskap av ledsagare?</h4>
-            <input type="radio" id="no-companion" name="trip-companion" value="no-companion">
+            <input type="radio" id="no-companion" name="trip-companion" value="no-companion" checked>
             <label for="no-companion">Nej</label>
             <br>
             <input type="radio" id="one-companion" name="trip-companion" value="one-companion">
@@ -90,7 +105,7 @@
 
             <br>
             <h4>Har du sällskap av medresenärer?</h4>
-            <input type="radio" id="no-fellow-traveler" name="fellow-traveler" value="no-fellow-traveler">
+            <input type="radio" id="no-fellow-traveler" name="fellow-traveler" value="no-fellow-traveler" checked>
             <label for="no-fellow-traveler">Nej</label>
             <br>
             <input type="radio" id="one-fellow-traveler" name="fellow-traveler" value="one-fellow-traveler">
@@ -104,7 +119,7 @@
             
             <br>
             <h4>Reser du med hjälpmedel?</h4>
-            <input type="radio" id="no-travel-aid" name="travel-aid" value="no-travel-aid">
+            <input type="radio" id="no-travel-aid" name="travel-aid" value="no-travel-aid" checked>
             <label for="no-travel-aid">Nej</label>
             <br>
             <input type="radio" id="wheelchair" name="travel-aid" value="wheelchair">
@@ -114,7 +129,7 @@
             <label for="walker">Ja, Rullator</label>
 
             <br>
-            <button type="submit" form="book-trip" value="submit" class="btn-large book-btn">Boka resa</button>
+            <button type="submit" form="book-trip" value="submit" class="btn-large book-btn margin-top-3">Boka resa</button>
         </form>
 
 

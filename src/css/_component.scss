@@ -1,2 +1,183 @@
 /* Styles for components - buttons, navbars, cards, reusables */
+a {
+    text-decoration: none;
+    color: $font-color;
+}
 
+h1 {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+}
+
+hr {
+    margin: 0;
+    border: 10px solid #8FA0B4;
+}
+
+.btn-change {
+    background-color: #2E4291;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-delete {
+    background-color: #912E3F;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-large {
+    background-color: #2E4291;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.main-nav {
+    width: 100%;
+    align-self: end;
+
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+
+        a:hover,
+        .current {
+            background-color: #2E4291;
+            color: #FFFFFF;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 230px;
+            height: 120px;
+        
+        }
+    }
+
+}
+
+.card-section { 
+    margin-top: 5rem;       
+
+    div {
+        width: 357px;
+        height: 416px;
+        background: #FFFFFF;
+        border: 5px solid transparent;
+        box-shadow: 0 0 0 1px #707070;
+        padding: 2rem 1rem;
+
+        h4 {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 3rem 0 5rem 0;
+            font-size: 1.2rem;
+            width: 85%;
+        }
+    }
+
+    div:hover {
+        border: 5px solid #15266B;
+        margin: -4;
+        cursor: pointer
+    }
+
+    .card-section__card-link {
+        float: right;
+        margin: 0;
+        width: fit-content;
+    }
+}
+
+.profile-container {
+
+    .trip-info {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+aside {
+    background-color: #FFFFFF;
+    height: fit-content;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #707070;
+
+    h2 {
+        margin-top: 0 !important;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+footer {
+    color: #FFFFFF;
+
+    p {
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+        margin-top: 1.5rem;
+    }
+
+    a {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    nav {
+        
+        ul {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+                font-size: 1.3rem;
+
+                li {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        
+    }
+    
+
+}

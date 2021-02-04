@@ -3,8 +3,8 @@
 
 /* Variables */
 $font-stack: Helvetica, sans-serif;
-$primary-color: #fff5ee;
-$font-color: #637373;
+$primary-color: #F8F8F8;
+$font-color: #414042;
 
 
 /* Typography */
@@ -13,3 +13,73 @@ body {
     font: 1.6rem $font-stack;
     color: $font-color;
 }
+
+h2,
+h3,
+h4 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+ol {
+    margin-top: 0px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    text-align: center;
+
+    .left-align {
+        text-align: left;
+    }
+}
+
+table {
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom:1rem;
+}
+
+th {
+    padding: 0.5rem;
+    background-color: #707070; 
+    color: #FFFFFF;
+}
+
+tr {
+
+    &:nth-of-type(odd) {
+        background-color: #DCDCDC;
+    }
+}
+td {
+    padding: 1rem;
+}
+
+

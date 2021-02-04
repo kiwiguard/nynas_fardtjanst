@@ -1,1 +1,127 @@
 /* Styles related to layout */
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.main-content {
+    padding-top: 50px;
+}
+
+header {
+    height: 320px;
+    display: grid;
+
+    .pre-header{
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    padding-top: 20px;
+ 
+
+        .logo {
+            grid-area: logo;
+            width: 250px;
+            display: inline-block;
+        }
+
+        .pre-header__right {
+            float: right;
+
+            .tools-menu {
+                display: block;
+                float: right;
+                width: 100%;
+                margin-bottom: 20px;
+                
+                div {
+                    margin-left: 20px;
+                    display: inline-block;
+                }
+                
+            }
+        }
+            .search-bar {
+                display: block;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: 0;
+            }
+    }
+
+    ::after {
+        border: 1px solid #8FA0B4;
+    }
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    p, 
+    li,
+    a { 
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+   
+
+    .main-section {
+        padding-right: 4rem;
+    }
+    
+}
+
+.profile-heading {
+    text-align: center;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    section {
+        width: fit-content;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+    }
+
+    .profile-info__person-info {
+        p {
+          margin-bottom: 1rem;  
+        }
+    }
+
+}
+
+.profile-divider {
+    border: 2px solid #15266B;
+}
+
+footer {
+    background: #373E57;
+    height: fit-content;
+    margin-top: 50px;
+    padding: 3rem 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}

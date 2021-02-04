@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nynäshamns Färdtjänst</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="pre-header">
+                <a href="#"><div class="logo">Nynäshamns fädtjänst</div></a>
+                <div class="pre-header__right">
+                    <div class="tools-menu">
+                        <div class="tools-menu__log-in" tabindex="0">Logga in</div>
+                        <div class="tools-menu__listen" tabindex="0">Lyssna</div>
+                        <div class="tools-menu__translate" tabindex="0">Translate</div>
+                        <div class="tools-menu__contact" tabindex="0">Kontakta oss</div>
+                    </div>
+                </div>
+                <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+            </div> <!-- End pre-header -->
+            
+            <nav class="main-nav">
+                <ul>
+                    <a href="index.html" ><li>Startsida</li></a>
+                    <a href="book.html"><li>Boka Färdtjänst</li></a>
+                    <a href="login.html" class="current"><li>Mina Sidor</li></a>
+                    <a href="information.html"><li>Information om färdtjänst</li></a>
+                    <a href="rules.html"><li>Regler</li></a>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <hr>
+    <div class="container profile-container main-content">
+        <h1 class="profile-heading">Mina sidor</h1>
+        <div class="profile-info">
+            <section class="profile-info__info-text">
+                <h3>Välkommen, Susanne!</h3>
+                <p>Här kan du se dina uppgifter och dina bokningar.
+                    <br>
+                    Du kan även boka, avboka och ändra dina bokningar.
+                    <br>
+                    Du ser dina befintliga bokningar längre ner på sidan. </p>
+            </section>
+            <section class="profile-info__person-info">
+                <h3>Mina uppgifter</h3>
+                <p>Namn: Susanne Nilsson <br>
+                    Kundnummer: XXXXXXXXXXX <br>
+                    Telefonnummer: 070 - 123 45 67 <br>
+                    E-post: susanne@nilsson.se
+                    </p>
+                <button class="btn-change">Ändra mina uppgifter</button>
+            </section>
+        </div>
+        <hr class="profile-divider">
+
+        <section>
+            <h2>Mina bokningar</h2>
+            <table>
+                <caption>Bokade resor</caption>
+                <tr>
+                    <th>Datum</th>
+                    <th class="left-align">Resa</th>
+                    <th>Typ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>24 December<br>
+                        kl. 07.45</td>
+                    <td class="left-align"><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn<br>
+                        <strong>Till:</strong> Fogdevägen 15, 86241 Njurunda
+                    </td>
+                    <td>
+                        Tur och retur
+                    </td>
+                    <td>
+                        <button class="btn-change">Mer info / Ändra</button>
+                        <button class="btn-delete">Avboka</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2 Januari<br>
+                        kl. 14.00</td>
+                    <td class="left-align"><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn<br>
+                        <strong>Till:</strong> Söder Enbyvägen 24, 14897 Sorunda
+                    </td>
+                    <td>
+                        Enkel resa
+                    </td>
+                    <td>
+                        <button class="btn-change">Mer info / Ändra</button>
+                        <button class="btn-delete">Avboka</button>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <caption>Återkommande resor</caption>
+                <tr>
+                    <th>Datum</th>
+                    <th class="left-align">Resa</th>
+                    <th>Typ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Tisdagar<br>
+                        kl. 07.30</td>
+                    <td class="left-align"><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn<br>
+                        <strong>Till:</strong> Idunvägen 1, 14931 Nynäshamn
+                    </td>
+                    <td>
+                        Tur och retur
+                    </td>
+                    <td>
+                        <button class="btn-change">Mer info / Ändra</button>
+                        <button class="btn-delete">Avboka</button>
+                    </td>
+                </tr>
+            </table>
+
+            <button class="btn-large book-btn">Boka ny färdtjänstresa</button>
+            <p class="trip-info">Behöver du hjälp med att boka, ändra eller avboka din resa?<br>
+                Ring kundtjänst på 08 - 987 65 00 <br>
+                (måndag - torsdag 9 - 10<br>
+                fredag 16 - 17)</p>
+        </section> 
+
+    </div> <!-- End container --> 
+    <footer>
+        <div class="container">
+            <div class="footer-div">
+                <h4>Färdtjänst</h4>
+                <p><strong>Kontakta Oss</strong><br>
+                Färdens Kommun <br>
+                Färdgatan 12, Färde</p>
+                <p>08 - 987 65 00</p>
+                <p><a href="mailto:kontakt@fardtjansten.ft">kontakt@fardtjansten.ft</a></p>
+            </div>
+            <div class="footer-div">
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>Startsidan</li></a>
+                        <a href="book.html"><li>Boka färdtjänst</li></a>
+                        <a href="login.html"><li>Mina sidor</li></a>
+                        <a href="index.html"><li>Kundservice</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-div">
+                <nav>
+                    <ul>
+                        <a href="information.html"><li>Information om färdtjänst</li></a>
+                        <a href="rules.html"><li>Regler och ansökan</li></a>
+                        <a href="accessability.html"><li>Tillgänglighetsredogörelse</li></a>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

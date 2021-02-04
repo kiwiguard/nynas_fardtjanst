@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nynäshamns Färdtjänst</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="pre-header">
+                <a href="#"><div class="logo">Nynäshamns fädtjänst</div></a>
+                <div class="pre-header__right">
+                    <div class="tools-menu">
+                        <div class="tools-menu__log-in" tabindex="0">Logga in</div>
+                        <div class="tools-menu__listen" tabindex="0">Lyssna</div>
+                        <div class="tools-menu__translate" tabindex="0">Translate</div>
+                        <div class="tools-menu__contact" tabindex="0">Kontakta oss</div>
+                    </div>
+                </div>
+                <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+            </div> <!-- End pre-header -->
+            
+            <nav class="main-nav">
+                <ul>
+                    <a href="index.html" ><li>Startsida</li></a>
+                    <a href="book.html" class="current"><li>Boka Färdtjänst</li></a>
+                    <a href="login.html"><li>Mina Sidor</li></a>
+                    <a href="information.html"><li>Information om färdtjänst</li></a>
+                    <a href="rules.html"><li>Regler</li></a>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <hr>
+    <div class="container main-content">
+        <h2>Välkommen Susanne!</h2>
+        <h3>Vart vill du resa?</h3>
+
+        <form method="GET" action="/profile.html" id="book-trip">
+            <label for="saved-trips" accesskey="s">Sparade resor</label>
+            <select name="saved-trips" id="saved-trips">
+                <option>Vårdcentralen, Tur och Retur</option>
+                <option>Mamma, Enkel resa</option>
+                <option>Fritidsgården, Tur och Retur</option>
+            </select>
+            <br>
+            <h4>Från:</h4>
+            <label for="from-adress">Adress</label><br>
+            <input type="text" id="from-adress" name="from-adress">
+            <label for="from-zipcode">Postnummer</label>
+            <input type="text" id="from-zipcode" name="from-zipcode">
+
+            <h4>Till:</h4>
+            <label for="to-adress">Adress</label><br>
+            <input type="text" id="to-adress" name="to-adress">
+            <label for="to-zipcode">Postnummer</label>
+            <input type="text" id="to-zipcode" name="to-zipcode">
+
+            <br>
+            <input type="radio" id="return-trip" name="trip-option" value="return-trip">
+            <label for="return-trip">Jag vill åka tur och retur</label>
+            <br>
+            <input type="radio" id="one-way" name="trip-option" value="one-way">
+            <label for="one-way">Jag vill åka enkel väg</label>
+            
+            <br>
+            <label class="from-date">Utresa</label>
+            <input type="Date" name="from-date">
+            <input type="time" name="from-time">
+            <br>
+            <label class="home-date">Hemresa</label>
+            <input type="Date" name="home-date">
+            <input type="time" name="home-time">
+
+            <br>
+            <input type="checkbox" name="save-trip">
+            <label for="save-trip">Spara som återkommande resa</label>
+
+            <br>
+            <h4>Har du sällskap av ledsagare?</h4>
+            <input type="radio" id="no-companion" name="trip-companion" value="no-companion">
+            <label for="no-companion">Nej</label>
+            <br>
+            <input type="radio" id="one-companion" name="trip-companion" value="one-companion">
+            <label for="one-companion">Ja, en (1) ledsagare</label>
+
+            <br>
+            <h4>Har du sällskap av medresenärer?</h4>
+            <input type="radio" id="no-fellow-traveler" name="fellow-traveler" value="no-fellow-traveler">
+            <label for="no-fellow-traveler">Nej</label>
+            <br>
+            <input type="radio" id="one-fellow-traveler" name="fellow-traveler" value="one-fellow-traveler">
+            <label for="one-fellow-traveler">Ja, en (1) vuxen/barn</label>
+            <br>
+            <input type="radio" id="two-fellow-traveler" name="fellow-traveler" value="two-fellow-traveler">
+            <label for="two-fellow-traveler">Ja, två (2) vuxna/barn</label>
+            <br>
+            <input type="radio" id="three-fellow-traveler" name="fellow-traveler" value="three-fellow-traveler">
+            <label for="three-fellow-traveler">Ja, tre (3) vuxna/barn</label>
+            
+            <br>
+            <h4>Reser du med hjälpmedel?</h4>
+            <input type="radio" id="no-travel-aid" name="travel-aid" value="no-travel-aid">
+            <label for="no-travel-aid">Nej</label>
+            <br>
+            <input type="radio" id="wheelchair" name="travel-aid" value="wheelchair">
+            <label for="wheelchair">Ja, Rullstol</label>
+            <br>
+            <input type="radio" id="walker" name="travel-aid" value="walker">
+            <label for="walker">Ja, Rullator</label>
+
+            <br>
+            <button type="submit" form="book-trip" value="submit" class="btn-large book-btn">Boka resa</button>
+        </form>
+
+
+    </div> <!-- End container --> 
+    <footer>
+        <div class="container">
+            <div class="footer-div">
+                <h4>Färdtjänst</h4>
+                <p><strong>Kontakta Oss</strong><br>
+                Färdens Kommun <br>
+                Färdgatan 12, Färde</p>
+                <p>08 - 987 65 00</p>
+                <p><a href="mailto:kontakt@fardtjansten.ft">kontakt@fardtjansten.ft</a></p>
+            </div>
+            <div class="footer-div">
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>Startsidan</li></a>
+                        <a href="book.html"><li>Boka färdtjänst</li></a>
+                        <a href="login.html"><li>Mina sidor</li></a>
+                        <a href="index.html"><li>Kundservice</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-div">
+                <nav>
+                    <ul>
+                        <a href="information.html"><li>Information om färdtjänst</li></a>
+                        <a href="rules.html"><li>Regler och ansökan</li></a>
+                        <a href="accessability.html"><li>Tillgänglighetsredogörelse</li></a>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

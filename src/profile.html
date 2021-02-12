@@ -14,10 +14,10 @@
                 <a href="#"><div class="logo">Nynäshamns fädtjänst</div></a>
                 <div class="pre-header__right">
                     <div class="tools-menu">
-                        <div class="tools-menu__log-in" tabindex="0">Logga in</div>
-                        <div class="tools-menu__listen" tabindex="0">Lyssna</div>
-                        <div class="tools-menu__translate" tabindex="0">Translate</div>
-                        <div class="tools-menu__contact" tabindex="0">Kontakta oss</div>
+                        <div class="tools-menu__log-in" tabindex="0"><a href="/login.html">Logga in</a></div>
+                        <div class="tools-menu__listen" tabindex="0"><a href="#">Lyssna</a></div>
+                        <div class="tools-menu__translate" tabindex="0"><a href="#">Translate</a></div>
+                        <div class="tools-menu__contact" tabindex="0"><a href="#">Kontakta oss</a></div>
                     </div>
                 </div>
                 <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
@@ -59,7 +59,7 @@
         </div>
         <hr class="profile-divider">
 
-        <section>
+        <section class="my-bookings">
             <h2>Mina bokningar</h2>
             <table>
                 <caption>Bokade resor</caption>
@@ -121,9 +121,10 @@
                     </td>
                 </tr>
             </table>
-
-            <button class="btn-large book-btn">Boka ny färdtjänstresa</button>
-            <p class="trip-info">Behöver du hjälp med att boka, ändra eller avboka din resa?<br>
+            <div class="book-new-container">
+                <button class="btn-large book-btn book-new-btn">Boka ny färdtjänstresa</button>
+            </div> 
+           <p class="trip-info">Behöver du hjälp med att boka, ändra eller avboka din resa?<br>
                 Ring kundtjänst på 08 - 987 65 00 <br>
                 (måndag - torsdag 9 - 10<br>
                 fredag 16 - 17)</p>

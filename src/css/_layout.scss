@@ -17,7 +17,7 @@
     display: block;
 }
 
-header {
+.desktop-header {
     height: 320px;
     display: grid;
 
@@ -59,6 +59,51 @@ header {
 
     ::after {
         border: 1px solid #8FA0B4;
+    }
+}
+
+.mobile-header {
+    .pre-header {
+        height: 62px;
+        background-color: #373E57;
+        width: 100vw;         
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-rows: auto;
+        color: #FFFFFF;
+        font-size: 1rem !important;
+
+        .pre-header__right {
+            float: right;
+            color: #FFFFFF;
+            font-size: 1rem !important;
+
+            .tools-menu {
+                display: block;
+                float: right;
+                width: 100%;
+                margin-bottom: 20px;
+                color: #FFFFFF;
+                font-size: 1rem !important;
+                
+                div {
+                    margin-left: 20px;
+                    display: inline-block;
+                }
+                
+            }
+        }
+    }
+
+    .main-header {
+        height: 136px;
+        background-color: #2E4291;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+
+        .logo {
+            width: 250px;
+            display: inline-block;
+        }
     }
 }
 

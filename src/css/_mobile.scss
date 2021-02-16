@@ -1,0 +1,84 @@
+@media screen and (max-width: 800px) {
+
+    a,
+    p,
+    label {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .desktop-header,
+    .main-nav {
+        display: none;
+    }
+
+    .login-form {
+        width: 95vw;
+
+    }
+
+    .card-section {
+        display: block;
+        
+        div {
+            margin-bottom: 2rem;
+            height: 250px;
+            padding: 1rem 0.5rem;
+
+            p {
+                line-height: 2rem;
+                margin: 1.5rem 0 2.5rem 0;
+            }
+        }
+    }
+
+    .form-control-group{
+        display: block !important;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+
+    #from-date,
+    #home-date {
+        margin-bottom: 1rem;
+    }
+
+    input [type="option"] {
+        width: 95vw;
+    }
+
+    .book-btn {
+        margin: 3rem 25% 0 25%;
+    }
+
+    footer {
+       .container {
+           display: block;
+           text-align: center;
+           
+           div {
+               margin-bottom: 4rem;
+
+               nav {
+                   font-weight: bold;
+               }
+           }
+
+           ul {
+               padding: 0;
+           }
+       } 
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .mobile-header {
+        display: none;
+    }
+}

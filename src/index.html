@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="se" class="js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                 <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
             </div> <!-- End pre-header -->
             
-            <nav class="main-nav">
+            <nav role="naviagtion" class="main-nav">
                 <ul>
                     <a href="index.html" class="current"><li>Startsida</li></a>
                     <a href="book.html"><li>Boka Färdtjänst</li></a>
@@ -48,10 +48,13 @@
             </div>
         </div> <!-- End pre-header -->
         <div class="main-header">
-            <a href="#"><div class="logo">Nynäshamns fädtjänst</div></a>
-            <nav class="main-nav">
-                <ul>
-                    <a href="index.html" class="current"><li>Startsida</li></a>
+            <a href="#" class="logo-link"><div class="logo">Nynäshamns fädtjänst</div></a>
+            <nav role="navigation" class="mobile-nav">
+                <button id="mobile-menu-btn" class="toggle" aria-expanded="false" aria-controls="menu">
+                    Menu
+                </button>
+                <ul id="mobile-nav-list">
+                    <a href="index.html"><li>Startsida</li></a>
                     <a href="book.html"><li>Boka Färdtjänst</li></a>
                     <a href="login.html"><li>Mina Sidor</li></a>
                     <a href="information.html"><li>Information om färdtjänst</li></a>
@@ -60,8 +63,7 @@
             </nav>
         </div>
         <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
-
-    </header>
+    </header> <!-- End  Mobile header -->
 
     <hr>
         <div class="container main-content">

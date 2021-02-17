@@ -106,6 +106,16 @@ hr {
 
 }
 
+
+#mobile-nav-list {
+    display: none;
+}
+
+#mobile-nav-list.is-active {
+    display: block;
+}
+
+
 .card-section { 
     margin-top: 5rem;       
 

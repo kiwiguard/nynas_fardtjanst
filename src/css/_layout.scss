@@ -70,24 +70,27 @@
         grid-template-columns: 2fr 1fr 1fr 2fr;
         grid-template-rows: auto;
         color: #FFFFFF;
-        font-size: 1rem !important;
 
         .pre-header__right {
             float: right;
             color: #FFFFFF;
-            font-size: 1rem !important;
+
 
             .tools-menu {
                 display: block;
                 float: right;
                 width: 100%;
                 margin-bottom: 20px;
-                color: #FFFFFF;
-                font-size: 1rem !important;
+    
                 
                 div {
                     margin-left: 20px;
                     display: inline-block;
+
+                    a {
+                        color: #FFFFFF;
+                        font-size: 1rem !important;
+                    }
                 }
                 
             }
@@ -100,9 +103,13 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
 
-        .logo {
+        .logo-link {
             width: 250px;
             display: inline-block;
+
+            div{
+                color: #FFFFFF;
+            }
         }
     }
 }

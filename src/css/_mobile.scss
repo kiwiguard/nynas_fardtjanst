@@ -12,7 +12,8 @@
     }
 
     .desktop-header,
-    .main-nav {
+    .main-nav,
+    .my-bookings-desktop {
         display: none;
     }
 
@@ -70,6 +71,92 @@
         margin: 3rem 25% 0 25%;
     }
 
+    .info-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    
+        p, 
+        li,
+        a { 
+            font-size: 1.3rem;
+            line-height: 2.4rem;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        .main-section {
+            padding-right: 0;
+        }
+        
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    
+        section {
+            width: fit-content;
+            justify-self: left;
+            margin-bottom: 50px;
+        }
+    
+        p {
+            font-size: 1.1rem;
+            line-height: 2.4rem;
+        }
+    
+        .profile-info__person-info {
+            p {
+              margin-bottom: 1rem;  
+            }
+        }
+    
+    }
+
+    .my-bookings-mobile {
+        h5 {
+            color: #ffffff;
+            background-color: #707070;
+            padding: 10px 20px;
+            margin-top: 0;
+        }   
+        
+        .darker-bg {
+            background-color: #e2e2e2;
+        }
+
+        .mobile-booking {
+            padding: 50px 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding-left: 10px;
+        }
+
+        button {
+            margin-left: 25px;
+        }
+    }
+
+    .book-new-container {
+        padding-top: 2rem;
+    }
+
+    .book-new-btn {
+        margin: 0 !important;
+    }
+
+    .trip-info {
+        text-align: center;
+    }
+
     footer {
        .container {
            display: block;
@@ -91,7 +178,8 @@
 }
 
 @media screen and (min-width: 800px) {
-    .mobile-header {
+    .mobile-header,
+    .my-bookings-mobile {
         display: none;
     }
 }

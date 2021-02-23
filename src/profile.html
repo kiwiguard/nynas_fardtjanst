@@ -91,7 +91,7 @@
 
         <section class="my-bookings">
             <h2>Mina bokningar</h2>
-            <table>
+            <table class="my-bookings-desktop">
                 <caption>Bokade resor</caption>
                 <tr>
                     <th>Datum</th>
@@ -128,7 +128,7 @@
                     </td>
                 </tr>
             </table>
-            <table>
+            <table class="my-bookings-desktop">
                 <caption>Återkommande resor</caption>
                 <tr>
                     <th>Datum</th>
@@ -151,8 +151,39 @@
                     </td>
                 </tr>
             </table>
+    </div> <!-- End container --> 
+            <div class="my-bookings-mobile">
+                <h5>Bokade resor</h5>
+                <div class="mobile-booking">
+                    <p><strong>Datum:</strong> 2020-12-24 kl. 07.45</p>
+                    <p><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn</p>
+                    <p><strong>Till:</strong> Fogdevägen 15, 86241 Njurunda</p>
+                    <p><strong>Typ:</strong> Tur och retur</p>
+                    <button class="btn-change">Mer info / Ändra</button>
+                    <button class="btn-delete">Avboka</button>  
+                </div>
+                <div class="mobile-booking darker-bg">
+                    <p><strong>Datum:</strong> 2021-01-02 kl. 14.00</p>
+                    <p><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn</p>
+                    <p><strong>Till:</strong> Söder Enbyvägen 24, 14897 Sorunda</p>
+                    <p><strong>Typ:</strong> Enkel resa</p>
+                    <button class="btn-change">Mer info / Ändra</button>
+                    <button class="btn-delete">Avboka</button>  
+                </div>
+                <h5>Återkommande resor</h5>
+                <div class="mobile-booking">
+                    <p><strong>Datum:</strong> Tisdagar kl. 07.30</p>
+                    <p><strong>Från:</strong> Utsiktsvägen 9B, 14941 Nynäshamn</p>
+                    <p><strong>Till:</strong> Idunvägen 1, 14931 Nynäshamn</p>
+                    <p><strong>Typ:</strong> Tur och retur</p>
+                    <button class="btn-change">Mer info / Ändra</button>
+                    <button class="btn-delete">Avboka</button>  
+                </div>
+            </div>
+
+    <div class="container">  
             <div class="book-new-container">
-                <button class="btn-large book-btn book-new-btn">Boka ny färdtjänstresa</button>
+                <button class="book-new-btn btn-large book-btn">Boka ny färdtjänstresa</button>
             </div> 
            <p class="trip-info">Behöver du hjälp med att boka, ändra eller avboka din resa?<br>
                 Ring kundtjänst på 08 - 987 65 00 <br>

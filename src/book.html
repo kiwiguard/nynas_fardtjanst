@@ -35,6 +35,36 @@
 
         </header>
     </div>
+
+    <header class="mobile-header">
+        <div class="pre-header">
+            <div class="pre-header__right">
+                <div class="tools-menu">
+                    <div class="tools-menu__log-in" tabindex="0"><a href="/login.html">Logga in</a></div>
+                    <div class="tools-menu__listen" tabindex="0"><a href="#">Lyssna</a></div>
+                    <div class="tools-menu__translate" tabindex="0"><a href="#">Translate</a></div>
+                    <div class="tools-menu__contact" tabindex="0"><a href="#">Kontakta oss</a></div>
+                </div>
+            </div>
+        </div> <!-- End pre-header -->
+        <div class="main-header mobile-main-header">
+            <a href="#" class="logo-link"><div class="logo">Nynäshamns fädtjänst</div></a>
+            <nav role="navigation" id="mobile-nav" class="overlay" aria-expanded="false" aria-controls="menu" style="width: 0px;">
+                    <a href="javascript:void(0)" class="close" onclick="closeNav()"><i class="fa fa-times fa-1x"></i></a>
+                    <a href="index.html">Startsida</a>
+                    <a href="book.html">Boka Färdtjänst</a>
+                    <a href="login.html">Mina Sidor</a>
+                    <a href="information.html">Information om färdtjänst</a>
+                    <a href="rules.html">Regler</a>
+            </nav>
+            <div id="mobile-menu">
+                <div class="open" onclick="openNav()" aria-expanded="false" aria-controls="menu"><i class="fa fa-bars fa-1x"></i></div>
+            </div>
+
+        </div>
+        <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+    </header> <!-- End  Mobile header -->
+    
     <hr>
     <div class="container main-content">
         <h2>Välkommen Susanne!</h2>

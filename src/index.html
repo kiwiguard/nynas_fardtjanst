@@ -20,7 +20,9 @@
                         <div class="tools-menu__contact" tabindex="0"><a href="#">Kontakta oss</a></div>
                     </div>
                 </div>
-                <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a>
+                </div>
             </div> <!-- End pre-header -->
             
             <nav role="naviagtion" class="main-nav">
@@ -47,20 +49,20 @@
                 </div>
             </div>
         </div> <!-- End pre-header -->
-        <div class="main-header">
+        <div class="main-header mobile-main-header">
             <a href="#" class="logo-link"><div class="logo">Nynäshamns fädtjänst</div></a>
-            <nav role="navigation" class="mobile-nav">
-                <button id="mobile-menu-btn" class="toggle" aria-expanded="false" aria-controls="menu">
-                    Menu
-                </button>
-                <ul id="mobile-nav-list">
-                    <a href="index.html"><li>Startsida</li></a>
-                    <a href="book.html"><li>Boka Färdtjänst</li></a>
-                    <a href="login.html"><li>Mina Sidor</li></a>
-                    <a href="information.html"><li>Information om färdtjänst</li></a>
-                    <a href="rules.html"><li>Regler</li></a>
-                </ul>
+            <nav role="navigation" id="mobile-nav" class="overlay" aria-expanded="false" aria-controls="menu" style="width: 0px;">
+                    <a href="javascript:void(0)" class="close" onclick="closeNav()"><i class="fa fa-times fa-1x"></i></a>
+                    <a href="index.html">Startsida</a>
+                    <a href="book.html">Boka Färdtjänst</a>
+                    <a href="login.html">Mina Sidor</a>
+                    <a href="information.html">Information om färdtjänst</a>
+                    <a href="rules.html">Regler</a>
             </nav>
+            <div id="mobile-menu">
+                <div class="open" onclick="openNav()" aria-expanded="false" aria-controls="menu"><i class="fa fa-bars fa-1x"></i></div>
+            </div>
+
         </div>
         <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
     </header> <!-- End  Mobile header -->

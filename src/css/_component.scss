@@ -106,14 +106,62 @@ hr {
 
 }
 
-
-#mobile-nav-list {
-    display: none;
-}
-
-#mobile-nav-list.is-active {
+.mobile-main-header {
     display: block;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    z-index: 1;
+    text-align: right;
+
+    .logo-link {
+        float: left;
+    }
 }
+
+#mobile-menu {
+    padding: 20px;
+    float: right;
+}
+
+.open {
+    font-size: 2rem;
+    color: #eeeeee;
+    padding: 10px 15px;
+}
+
+.overlay {
+    padding-top: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right:0;
+    z-index: 1;
+    background-color: #373E57;
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 105px;
+        margin-right: 40px;
+    }
+
+    a {
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: underline;
+        margin-bottom: 30px;
+    }
+}
+
+
 
 
 .card-section { 

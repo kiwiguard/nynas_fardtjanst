@@ -11,7 +11,7 @@
     <div class="container">
         <header class="desktop-header">
             <div class="pre-header">
-                <a href="#"><div class="logo">Nynäshamns fädtjänst</div></a>
+                <a href="#"><div class="logo">Nynäshamns färdtjänst</div></a>
                 <div class="pre-header__right">
                     <div class="tools-menu">
                         <div class="tools-menu__log-in" tabindex="0"><a href="/login.html">Logga in</a></div>
@@ -25,13 +25,13 @@
                 </div>
             </div> <!-- End pre-header -->
             
-            <nav role="naviagtion" class="main-nav">
+            <nav class="main-nav">
                 <ul>
-                    <a href="index.html" class="current"><li>Startsida</li></a>
-                    <a href="book.html"><li>Boka Färdtjänst</li></a>
-                    <a href="login.html"><li>Mina Sidor</li></a>
-                    <a href="information.html"><li>Information om färdtjänst</li></a>
-                    <a href="rules.html"><li>Regler</li></a>
+                    <li><a href="index.html" class="current">Startsida</a></li>
+                    <li><a href="book.html">Boka Färdtjänst</a></li>
+                    <li><a href="login.html">Mina Sidor</a></li>
+                    <li><a href="information.html">Information om färdtjänst</a></li>
+                    <li><a href="rules.html">Regler</a></li>
                 </ul>
             </nav>
 
@@ -51,7 +51,7 @@
         </div> <!-- End pre-header -->
         <div class="main-header mobile-main-header">
             <a href="#" class="logo-link"><div class="logo">Nynäshamns fädtjänst</div></a>
-            <nav role="navigation" id="mobile-nav" class="overlay" aria-expanded="false" aria-controls="menu" style="width: 0px;">
+            <nav id="mobile-nav" class="overlay" style="width: 0px;">
                     <a href="javascript:void(0)" class="close" onclick="closeNav()"><i class="fa fa-times fa-1x"></i></a>
                     <a href="index.html">Startsida</a>
                     <a href="book.html">Boka Färdtjänst</a>
@@ -60,7 +60,7 @@
                     <a href="rules.html">Regler</a>
             </nav>
             <div id="mobile-menu">
-                <div class="open" onclick="openNav()" aria-expanded="false" aria-controls="menu"><i class="fa fa-bars fa-1x"></i></div>
+                <div class="open" onclick="openNav()" role='navigation'><i class="fa fa-bars fa-1x"></i></div>
             </div>
 
         </div>
@@ -82,7 +82,7 @@
                     <div class="card-section__card1"> 
                         <a href="#">
                             <h4 tabindex="-1">Logga in och boka resa</h4>
-                            <p tabindex="-1">Logga in för att hantera dina
+                            <p>Logga in för att hantera dina
                                 bokningar. 
                                 Här kan du boka nya och 
                                 återkommande resor.
@@ -95,7 +95,7 @@
                     <div class="card-section__card2">
                         <a href="/information.html">
                             <h4 tabindex="-1">Så fungerar färdtjänst</h4>
-                            <p tabindex="-1">Här kan du läsa mer om
+                            <p>Här kan du läsa mer om
                                 hur färdtjänst fungerar och
                                 vilka regler som gäller
                             </p>
@@ -106,7 +106,7 @@
                     <div class="card-section__card3">
                         <a href="/rules.html">
                             <h4 tabindex="-1">Ansök om färdtjänst</h4>
-                            <p tabindex="-1">Klicka här för att ansöka
+                            <p>Klicka här för att ansöka
                                 om färdtjänst
                                 <br/>
                                 <br>
@@ -115,8 +115,6 @@
                         </a>
                     </div>
             </div>
-        </div>
-
     </div> <!-- End container --> 
     <footer>
         <div class="container">
@@ -131,19 +129,19 @@
             <div class="footer-div">
                 <nav>
                     <ul>
-                        <a href="index.html"><li>Startsidan</li></a>
-                        <a href="book.html"><li>Boka färdtjänst</li></a>
-                        <a href="login.html"><li>Mina sidor</li></a>
-                        <a href="index.html"><li>Kundservice</li></a>
+                        <li><a href="index.html">Startsidan</a></li>
+                        <li><a href="book.html">Boka färdtjänst</a></li>
+                        <li><a href="login.html">Mina sidor</a></li>
+                        <li><a href="index.html">Kundservice</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="footer-div">
                 <nav>
                     <ul>
-                        <a href="information.html"><li>Information om färdtjänst</li></a>
-                        <a href="rules.html"><li>Regler och ansökan</li></a>
-                        <a href="accessability.html"><li>Tillgänglighetsredogörelse</li></a>
+                        <li><a href="information.html">Information om färdtjänst</a></li>
+                        <li><a href="rules.html">Regler och ansökan</a></li>
+                        <li><a href="accessability.html">Tillgänglighetsredogörelse</a></li>
                     </ul>
                 </nav>
                 

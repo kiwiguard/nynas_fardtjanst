@@ -143,7 +143,8 @@
     text-align: center;
 }
 
-.profile-info {
+.profile-info,
+.confirmation-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -170,6 +171,37 @@
 
 .profile-divider {
     border: 2px solid #15266B;
+}
+
+.confirmation-info {
+    padding: 2rem 4rem;
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+}
+.confirmation-infor--map {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.flaws-form {
+    padding-bottom: 1rem;
+
+    input {
+        &[type='text'] {
+            padding: 6px;
+            width: 100%;
+        }
+    }
+    
+    textarea {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
 }
 
 form {
@@ -203,6 +235,10 @@ form {
         width: fit-content;
     }
     
+}
+
+.confirmation-header {
+    border-bottom: 2px solid #15266b;
 }
 
 .login-help-links {

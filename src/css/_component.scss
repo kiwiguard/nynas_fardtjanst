@@ -93,7 +93,8 @@ hr {
             color: #FFFFFF;
         }
 
-        li {
+        li,
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -161,9 +162,6 @@ hr {
     }
 }
 
-
-
-
 .card-section { 
     margin-top: 5rem;       
 
@@ -188,7 +186,7 @@ hr {
 
     div:hover {
         border: 5px solid #15266B;
-        margin: -4;
+        margin: 0;
         cursor: pointer
     }
 
@@ -199,12 +197,13 @@ hr {
     }
 }
 
-.profile-container {
+.confirmation-heading {
+    text-align: center;
+}
 
-    .trip-info {
-        font-size: 1.1rem;
-        text-align: center;
-    }
+.trip-info {
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 form {
@@ -253,10 +252,11 @@ footer {
             a {
                 text-decoration: none;
                 font-size: 1.3rem;
+            }
 
-                li {
-                    margin-bottom: 1.5rem;
-                }
+            li,
+            a {
+                margin-bottom: 1.5rem;
             }
         }
         

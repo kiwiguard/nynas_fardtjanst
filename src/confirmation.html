@@ -25,10 +25,10 @@
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="index.html" class="current">Startsida</a></li>
                     <li><a href="book.html">Boka Färdtjänst</a></li>
                     <li><a href="login.html">Mina Sidor</a></li>
-                    <li><a href="information.html" class="current">Information om färdtjänst</a></li>
+                    <li><a href="information.html">Information om färdtjänst</a></li>
                     <li><a href="rules.html">Regler</a></li>
                 </ul>
             </nav>
@@ -66,50 +66,43 @@
     </header> <!-- End  Mobile header -->
     
     <hr>
-    <div class="container info-content main-content">
-        <section class="main-section">
-            <h1>Information om färdtjänst</h1>
-            <p>Du som har svårt att resa med allmänna färdmedel, till exempel buss, tåg och tunnelbana, kan få resa med färdtjänst eller riksfärdtjänst. Servicen finns för dig som till exempel inte ser, har svårt att röra dig eller inte kan resa ensam utan ledsagare.</p>
+    <div class="container profile-container main-content">
+        <h1 class="profile-heading">Bokningsbekräftelse</h1>
+        <div class='confirmation-header'>
+            <br />
+        <h2 class='confirmation-heading'>Din bokning är bekräftad!</h2>
+        <p class="trip-info">Vänligen kontrollera så att uppgifterna stämmer.</p><br>
+        </div>
 
-            <h2>Ansök om färdtjänst</h2>
-            <p>För att få färdtjänst måste ditt funktionshinder vara bestående - minst tre månader eller längre. Du måste också vara folkbokförd i Stockholms län. Det är Region Stockholm som beslutar om färdtjänst, men det är kommunen som utreder behovet.</p>
-            <h3>Så går det till</h3>
-            <ol>
-                <li>Be din läkare om ett läkarintyg. Läkarintyget får inte vara äldre än tre månader.</li>
-                <li>Ring eller mejla Kontaktcenter och be om ansökningsblankett. Du får ansökningsblanketten via post.</li>
-                <li>Tillsammans med ansökningsblanketten ska du skicka med ett foto i mindre storlek på dig själv, gärna ett passfoto. Fäst fotot med ett gem på 
-                    ansökningsblanketten. Fotografiet får inte vara äldre än sex år.</li>
-                <li>Skicka in ansökningsblankett till oss på Kontaktcenter. Bifoga läkarintyget och fotot.</li>
-                <li>När vi har fått alla handlingar från dig skickar vi en kallelse för tidsbokning. Du får då vid bokad tid komma till Kontaktcenter och träffa 
-                    en färdtjänsthandläggare. På grund av smittorisken går det just nu även 
-                    bra att ta det via telefon.</li>
-                <li>Du får ett beslut. Svaret på din ansökan om färdtjänst får du i ett beslut från färdtjänstnämnden. Inom fjorton dagar skickas ditt färdtjänstkort till dig.</li>
-            </ol>
-            <h3>Avgift för färdtjänst</h3>
-            <p>Avgiften för färdtjänst beslutas av Region Stockholm, inte kommunen. Avgiften betalas för varje påbörjad 30-kilometersträcka. För färstjänst gäller ett högkostnadsskydd, vilket innebär att den högsta avgiften som du får betala är motsvarande kostnaden för ett månadskort i kollektivtrafiken.
-            </p>
+        <section class="confirmation-info">
+            <div>
+                <h3>Bokad resa:</h3>
+                <p><span class='bold'>Från: </span>Utsiktsvägen 9B, 149 41 Nynäshamn</p>
+                <p><span class='bold'>Till: </span>Fogdevägen 15, 862 41 Njurunda</p>
+                <p><span class='bold'>Datum: </span>2020-12-24</p>
+                <p><span class='bold'>Tid: </span>07.45</p>
+                <p><span class='bold'>Typ av resa: </span>Tur och retur</p>
+                <p><span class='bold'>Tid för återresa: </span>2021-01-04, kl. 12.30</p>
+                <p><span class='bold'>Sällskap av ledsagare: </span>Ja</p>
+                <p><span class='bold'>Medresenärer: </span>Ja, en (1) Vuxen</p>
+                <p><span class='bold'>Hjälpmedel: </span>Nej</p><br>
+                <button class="btn-change">Mer info / Ändra</button>
+                <button class="btn-delete">Avboka</button>
+            </div>
+            <div class='confirmation-info--map'>
+                <img src="img/trip.jpg" alt='Kartbild som visar totalt restid mellan dina destinationer' />
+            </div>
         </section>
 
-        <aside>
-            <h2>Har du frågor om färdtjänst</h2>
-            <p>Färdens Kommun <br>
-                Färdgatan 12, Färde</p>
-            <p>08 - 987 65 00</p>
-            <p><a href="mailto:kontakt@fardtjansten.ft">kontakt@fardtjansten.ft</a></p>
-
-            <h4>Telefontider färdtjänst</h4>
-            <p>måndag - torsdag 9 - 10 <br>
-            fredag 16 - 17</p>
-
-            <h3>Länkar</h3>
-            <a href="https://nynashamn.se">Nynäshamns kommun</a><br>
-            <a href="#">Ansök om färdtjänst</a><i class="far fa-file-pdf"></i><br>
-            <a href="http://www.funkaportalen.se">Funka portalen</a>
-
-        </aside>
- 
-
-
+        <div class="container">  
+                <div class="book-new-container">
+                    <button class="book-new-btn btn-large book-btn">Tillbaka till Mina sidor</button>
+                </div> 
+            <p class="trip-info">Behöver du hjälp med att boka, ändra eller avboka din resa?<br>
+                    Ring kundtjänst på 08 - 987 65 00 <br>
+                    (måndag - torsdag 9 - 10<br>
+                    fredag 16 - 17)</p>
+        </div>
     </div> <!-- End container --> 
     <footer>
         <div class="container">

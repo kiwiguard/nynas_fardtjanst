@@ -25,18 +25,25 @@ h2 {
     font-size: 1.9rem;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 1.5rem;
 }
 
-h4 {
-    font-size: 1.2rem;
+h4,
+.h4 {
+    font-size: 1.6rem;
 }
 
-h5 {
+h5,
+.h5 {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0;
+}
+
+.h5 {
+    margin-top: 2rem;
 }
 
 ol {
@@ -66,7 +73,8 @@ caption {
     margin-bottom:1rem;
 }
 
-th {
+th,
+.th {
     padding: 0.5rem;
     background-color: #707070; 
     color: #FFFFFF;
@@ -84,5 +92,12 @@ td {
 
 .bold {
     font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+
+.white {
+    color: #ffffff !important;
 }
 

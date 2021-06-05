@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="se" class="js">
+<html lang="sv" class="js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,8 @@
                     </div>
                 </div>
                 <div class="search-bar">
-                    <input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a>
+                    <label for='search' class='hidden'>Sök</label>
+                    <input type="text" placeholder="Ange sökord" name='search' id='search'><a href="#" class="search-button"><i class="fa fa-search"></i>Sök</a>
                 </div>
             </div> <!-- End pre-header -->
             
@@ -62,7 +63,7 @@
             </div>
 
         </div>
-        <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+        <div class="search-bar"><input type="text" placeholder="Ange sökord" name='search'><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
     </header> <!-- End  Mobile header -->
 
     <hr>
@@ -79,7 +80,7 @@
                
                     <div class="card-section__card1"> 
                         <a href="book.html">
-                            <h4 tabindex="-1">Boka resa</h4>
+                            <h2 class='h4 white' tabindex="-1">Boka resa</h2>
                             <p>
                                 Klicka här för att boka nya och 
                                 återkommande resor.
@@ -93,7 +94,7 @@
                 
                     <div class="card-section__card2">
                         <a href="/information.html">
-                            <h4 tabindex="-1">Så fungerar färdtjänst</h4>
+                            <h2 class='h4' tabindex="-1">Så fungerar färdtjänst</h2>
                             <p>Här kan du läsa mer om
                                 hur färdtjänst fungerar och
                                 vilka regler som gäller
@@ -104,11 +105,10 @@
                
                     <div class="card-section__card3">
                         <a href="/login.html">
-                            <h4 tabindex="-1">Mina sidor</h4>
+                            <h2 class='h4' tabindex="-1">Mina sidor</h2>
                             <p>
                                 Här kan du logga in för att se och
                                 hantera dina bokningar på Mina sidor.
-                                <br>
                             </p>
                             <p class="card-section__card-link">Logga in ></p>
                         </a>
@@ -118,7 +118,7 @@
     <footer>
         <div class="container">
             <div class="footer-div">
-                <h4>Färdtjänst</h4>
+                <h3>Färdtjänst</h3>
                 <p><strong>Kontakta Oss</strong><br>
                 Färdens Kommun <br>
                 Färdgatan 12, Färde</p>
@@ -139,7 +139,7 @@
                 <nav>
                     <ul>
                         <li><a href="information.html">Information om färdtjänst</a></li>
-                        <li><a href="information.html">Regler och ansökan</a></li>
+                        <li><a href="#">Regler och ansökan</a></li>
                         <li><a href="accessability.html">Tillgänglighetsredogörelse</a></li>
                     </ul>
                 </nav>

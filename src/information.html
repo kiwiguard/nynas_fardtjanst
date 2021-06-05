@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,8 @@
                         <div class="tools-menu__contact" tabindex="0"><a href="#">Kontakta oss</a></div>
                     </div>
                 </div>
-                <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+                <label for='search' class='hidden'>Sök</label>
+                <div class="search-bar"><input type="text" placeholder="Ange sökord" id='search'><a href="#" class="search-button"><i class="fa fa-search"></i>Sök</a></div>
             </div> <!-- End pre-header -->
             
             <nav class="main-nav">
@@ -60,7 +61,7 @@
         </div>
 
         </div>
-        <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+        <div class="search-bar"><input type="text" placeholder="Ange sökord"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
     </header> <!-- End  Mobile header -->
     
     <hr>
@@ -78,16 +79,16 @@
                 <p>När du beviljas färdtjänst får du ett färdtjänsttillstånd och färdtjänstkort, som är personligt. Färdtjänsttillståndet gäller för en viss tid eller tillsvidare. Ibland kan ditt färdtjänsttillstånd också vara kopplat till vissa regler, till exempel:
                 </p>
     
-                <h5>Vilket färdsätt du får resa med</h5>
+                <p class='h5'>Vilket färdsätt du får resa med</p>
                 <p>Exempel: Buss som har plats för rullstol eller taxi.</p>
     
-                <h5>Hur många resor du får göra</h5>
+                <p class='h5'>Hur många resor du får göra</p>
                 <p>Exempel: Beslutet kan gälla att du får använda färdtjänst för ett begränsat antal resor. Det kan också vara ett beslut som säger att du får använda färdtjänst under en viss tid på året, till exempel på vintern.</p>
     
-                <h5>Inom vilket område du får resa</h5>
+                <p class='h5'>Inom vilket område du får resa</p>
                 <p>Exempel: Inom din hemkommun, mellan olika kommuner eller inom ett län.</p>
     
-                <h5>Särskilda skäl</h5>
+                <p class='h5'>Särskilda skäl</p>
                 <p>Det kan också finnas särskilda skäl som gör att det finns andra regler kopplade till ditt färdtjänsttillstånd. Men det ska vara rimliga regler.
     
                     Är du under 18 år så jämför man med hur andra i samma ålder och utan funktionshinder kan resa. Därefter beslutas om du har rätt till färdtjänst.</p>
@@ -139,7 +140,7 @@
             <p>08 - 987 65 00</p>
             <p><a href="mailto:kontakt@fardtjansten.ft">kontakt@fardtjansten.ft</a></p>
 
-            <h4>Telefontider färdtjänst</h4>
+            <h3>Telefontider färdtjänst</h3>
             <p>måndag - torsdag 9 - 10 <br>
             fredag 16 - 17</p>
 
@@ -156,7 +157,7 @@
     <footer>
         <div class="container">
             <div class="footer-div">
-                <h4>Färdtjänst</h4>
+                <h3>Färdtjänst</h3>
                 <p><strong>Kontakta Oss</strong><br>
                 Färdens Kommun <br>
                 Färdgatan 12, Färde</p>
@@ -177,7 +178,7 @@
                 <nav>
                     <ul>
                         <li><a href="information.html">Information om färdtjänst</a></li>
-                        <li><a href="information.html">Regler och ansökan</a></li>
+                        <li><a href="#">Regler och ansökan</a></li>
                         <li><a href="accessability.html">Tillgänglighetsredogörelse</a></li>
                     </ul>
                 </nav>

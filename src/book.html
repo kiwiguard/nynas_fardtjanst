@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,8 @@
                         <div class="tools-menu__contact" tabindex="0"><a href="#">Kontakta oss</a></div>
                     </div>
                 </div>
-                <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+                <label for='search' class='hidden'>Sök</label>
+                <div class="search-bar"><input type="text" placeholder="Ange sökord" id='search'><a href="#" class="search-button"><i class="fa fa-search"></i>Sök</a></div>
             </div> <!-- End pre-header -->
             
             <nav class="main-nav">
@@ -60,35 +61,37 @@
         </div>
 
         </div>
-        <div class="search-bar"><input type="text" placeholder="Sök"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
+        <div class="search-bar"><input type="text" placeholder="Ange sökord"><a href="#" class="search-button"><i class="fa fa-search"></i></a></div>
     </header> <!-- End  Mobile header -->
     
     <hr>
     <div class="container main-content">
-        <h2>Välkommen Susanne!</h2>
-        <h3>Vart vill du resa?</h3>
+        <h1>Välkommen Susanne!</h1>
+        <h2>Vart vill du resa?</h2>
 
         <form method="GET" action="/confirmation.html" id="book-trip">
-            <label for="saved-trips" accesskey="s">Sparade resor</label>
+            <label for="saved-trips">Sparade resor</label>
             <select name="saved-trips" id="saved-trips">
                 <option>Vårdcentralen, Tur och Retur</option>
                 <option>Mamma, Enkel resa</option>
                 <option>Fritidsgården, Tur och Retur</option>
             </select>
             <br>
-            <h4>Från:</h4>
-            <div class="form-control-group">
-                <div class="date-time-div">
-                    <label for="from-adress">Adress</label><br>
-                    <input type="text" id="from-adress" name="from-adress">
+            <fieldset class='margin-top-3'>
+            <Legend>Från:</Legend>
+                <div class="form-control-group">
+                    <div class="date-time-div">
+                        <label for="from-adress">Adress</label><br>
+                        <input type="text" id="from-adress" name="from-adress">
+                    </div>
+                    <div class="date-time-div">
+                        <label for="from-zipcode">Postnummer</label><br>
+                        <input type="text" id="from-zipcode" name="from-zipcode">
+                    </div>
                 </div>
-                <div class="date-time-div">
-                    <label for="from-zipcode">Postnummer</label><br>
-                    <input type="text" id="from-zipcode" name="from-zipcode">
-                </div>
-            </div>
-
-            <h4>Till:</h4>
+            </fieldset>
+            <fieldset class='margin-top-3'>
+            <legend>Till:</legend>
             <div class="form-control-group">
                 <div class="date-time-div">
                     <label for="to-adress">Adress</label><br>
@@ -99,23 +102,32 @@
                     <input type="text" id="to-zipcode" name="to-zipcode">
                 </div>
             </div>
+            </fieldset>
             <br>
-            <input type="radio" id="return-trip" name="trip-option" value="return-trip" class="margin-top-3" checked>
-            <label for="return-trip">Jag vill åka tur och retur</label>
-            <br>
-            <input type="radio" id="one-way" name="trip-option" value="one-way">
-            <label for="one-way">Jag vill åka enkel väg</label>
-            
+
+            <fieldset class='margin-top-3'>
+                <legend>Typ av resa</legend>
+                <input type="radio" id="return-trip" name="trip-option" value="return-trip" class="" checked>
+                <label for="return-trip">Jag vill åka tur och retur</label>
+                <br>
+                <input type="radio" id="one-way" name="trip-option" value="one-way">
+                <label for="one-way">Jag vill åka enkel väg</label>
+            </fieldset>
+
             <br>
             <div class="form-control-group margin-top-3">
                 <div class="date-time-div">
                     <label class="from-date display-block">Utresa</label>
+                    <label for='from-date'class="label">Datum</label>
                     <input type="Date" name="from-date" id="from-date">
+                    <label for='from-time' class="label">Tid</label>
                     <input type="time" name="from-time" id="from-time">
                 </div>
                 <div class="date-time-div">
                     <label class="home-date display-block">Hemresa</label>
+                    <label for='home-date'class="label">Datum</label>
                     <input type="Date" name="home-date" id="home-date">
+                    <label for='home-time' class="label">Tid</label>
                     <input type="time" name="home-time" id="home-time">
                 </div>
             </div>
@@ -124,37 +136,46 @@
             <label for="save-trip">Spara som återkommande resa</label>
 
             <br>
-            <h4>Har du sällskap av ledsagare?</h4>
-            <input type="radio" id="no-companion" name="trip-companion" value="no-companion" checked>
-            <label for="no-companion">Nej</label>
-            <br>
-            <input type="radio" id="one-companion" name="trip-companion" value="one-companion">
-            <label for="one-companion">Ja, en (1) ledsagare</label>
+
+            <fieldset class='margin-top-3'>
+                <Legend>Har du sällskap av ledsagare?</Legend>
+                <input type="radio" id="no-companion" name="trip-companion" value="no-companion" checked>
+                <label for="no-companion">Nej</label>
+                <br>
+                <input type="radio" id="one-companion" name="trip-companion" value="one-companion">
+                <label for="one-companion">Ja, en (1) ledsagare</label>
+            </fieldset>
 
             <br>
-            <h4>Har du sällskap av medresenärer?</h4>
-            <input type="radio" id="no-fellow-traveler" name="fellow-traveler" value="no-fellow-traveler" checked>
-            <label for="no-fellow-traveler">Nej</label>
-            <br>
-            <input type="radio" id="one-fellow-traveler" name="fellow-traveler" value="one-fellow-traveler">
-            <label for="one-fellow-traveler">Ja, en (1) vuxen/barn</label>
-            <br>
-            <input type="radio" id="two-fellow-traveler" name="fellow-traveler" value="two-fellow-traveler">
-            <label for="two-fellow-traveler">Ja, två (2) vuxna/barn</label>
-            <br>
-            <input type="radio" id="three-fellow-traveler" name="fellow-traveler" value="three-fellow-traveler">
-            <label for="three-fellow-traveler">Ja, tre (3) vuxna/barn</label>
             
+            <fieldset class='margin-top-3'>
+                <legend>Har du sällskap av medresenärer?</legend>
+                <input type="radio" id="no-fellow-traveler" name="fellow-traveler" value="no-fellow-traveler" checked>
+                <label for="no-fellow-traveler">Nej</label>
+                <br>
+                <input type="radio" id="one-fellow-traveler" name="fellow-traveler" value="one-fellow-traveler">
+                <label for="one-fellow-traveler">Ja, en (1) vuxen/barn</label>
+                <br>
+                <input type="radio" id="two-fellow-traveler" name="fellow-traveler" value="two-fellow-traveler">
+                <label for="two-fellow-traveler">Ja, två (2) vuxna/barn</label>
+                <br>
+                <input type="radio" id="three-fellow-traveler" name="fellow-traveler" value="three-fellow-traveler">
+                <label for="three-fellow-traveler">Ja, tre (3) vuxna/barn</label>
+            </fieldset>
+
             <br>
-            <h4>Reser du med hjälpmedel?</h4>
-            <input type="radio" id="no-travel-aid" name="travel-aid" value="no-travel-aid" checked>
-            <label for="no-travel-aid">Nej</label>
-            <br>
-            <input type="radio" id="wheelchair" name="travel-aid" value="wheelchair">
-            <label for="wheelchair">Ja, Rullstol</label>
-            <br>
-            <input type="radio" id="walker" name="travel-aid" value="walker">
-            <label for="walker">Ja, Rullator</label>
+            
+            <fieldset class='margin-top-3'>
+                <legend>Reser du med hjälpmedel?</legend>
+                <input type="radio" id="no-travel-aid" name="travel-aid" value="no-travel-aid" checked>
+                <label for="no-travel-aid">Nej</label>
+                <br>
+                <input type="radio" id="wheelchair" name="travel-aid" value="wheelchair">
+                <label for="wheelchair">Ja, Rullstol</label>
+                <br>
+                <input type="radio" id="walker" name="travel-aid" value="walker">
+                <label for="walker">Ja, Rullator</label>
+            </fieldset>
 
             <br>
             <button type="submit" form="book-trip" value="submit" class="btn-large book-btn margin-top-3">Boka resa</button>
@@ -165,7 +186,7 @@
     <footer>
         <div class="container">
             <div class="footer-div">
-                <h4>Färdtjänst</h4>
+                <h3>Färdtjänst</h3>
                 <p><strong>Kontakta Oss</strong><br>
                 Färdens Kommun <br>
                 Färdgatan 12, Färde</p>
@@ -186,7 +207,7 @@
                 <nav>
                     <ul>
                         <li><a href="information.html">Information om färdtjänst</a></li>
-                        <li><a href="information.html">Regler och ansökan</a></li>
+                        <li><a href="#">Regler och ansökan</a></li>
                         <li><a href="accessability.html">Tillgänglighetsredogörelse</a></li>
                     </ul>
                 </nav>

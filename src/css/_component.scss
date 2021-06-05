@@ -8,10 +8,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-h4 {
-    font-size: 1.6rem;
-}
-
 p {
     font-size: 1.5rem;
     line-height: 3.2rem;
@@ -182,7 +178,7 @@ hr {
         }
 
         p {
-            margin: 3rem 0 5rem 0;
+            margin: 3rem 0 2rem 0;
             font-size: 1.2rem;
             width: 85%;
         }
@@ -201,12 +197,12 @@ hr {
     }
 
     .card-section__card1 {
-        background-color: #2E4291;
-        color: #FFFFFF;
+        background-color: #2E4291 !important;
+        color: #FFFFFF !important;
 
         h4,
         p {
-            color: #FFFFFF;
+            color: #FFFFFF !important;
         }
     }
 }
@@ -226,6 +222,15 @@ form {
         font-weight: bold;
     }
 
+    fieldset {
+        border: none;
+        padding: 1rem 0 0 0 ;
+
+        legend {
+            font-weight: bold;
+            padding: 0;
+        }
+    }
 }
 
 aside {

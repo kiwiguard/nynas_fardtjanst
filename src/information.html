@@ -29,7 +29,6 @@
                     <li><a href="book.html">Boka Färdtjänst</a></li>
                     <li><a href="login.html">Mina Sidor</a></li>
                     <li><a href="information.html" class="current">Information om färdtjänst</a></li>
-                    <li><a href="rules.html">Regler</a></li>
                 </ul>
             </nav>
 
@@ -55,7 +54,6 @@
                 <a href="book.html">Boka Färdtjänst</a>
                 <a href="login.html">Mina Sidor</a>
                 <a href="information.html">Information om färdtjänst</a>
-                <a href="rules.html">Regler</a>
         </nav>
         <div id="mobile-menu">
             <div class="open" onclick="openNav()" role='navigation'><i class="fa fa-bars fa-1x"></i></div>
@@ -71,8 +69,52 @@
             <h1>Information om färdtjänst</h1>
             <p>Du som har svårt att resa med allmänna färdmedel, till exempel buss, tåg och tunnelbana, kan få resa med färdtjänst eller riksfärdtjänst. Servicen finns för dig som till exempel inte ser, har svårt att röra dig eller inte kan resa ensam utan ledsagare.</p>
 
+            <button onclick='openInfo(1)' class='infoBtn' id='infoBtn1' aria-controls='info1' aria-expanded='false'>
+                Hur får jag utnyttja färdtjänsten?
+                <span class='plus' id='plus1'>+</span>
+                <span class='minus' id='minus1'>-</span>
+            </button>
+            <div class='info-box' id=info1>
+                <p>När du beviljas färdtjänst får du ett färdtjänsttillstånd och färdtjänstkort, som är personligt. Färdtjänsttillståndet gäller för en viss tid eller tillsvidare. Ibland kan ditt färdtjänsttillstånd också vara kopplat till vissa regler, till exempel:
+                </p>
+    
+                <h5>Vilket färdsätt du får resa med</h5>
+                <p>Exempel: Buss som har plats för rullstol eller taxi.</p>
+    
+                <h5>Hur många resor du får göra</h5>
+                <p>Exempel: Beslutet kan gälla att du får använda färdtjänst för ett begränsat antal resor. Det kan också vara ett beslut som säger att du får använda färdtjänst under en viss tid på året, till exempel på vintern.</p>
+    
+                <h5>Inom vilket område du får resa</h5>
+                <p>Exempel: Inom din hemkommun, mellan olika kommuner eller inom ett län.</p>
+    
+                <h5>Särskilda skäl</h5>
+                <p>Det kan också finnas särskilda skäl som gör att det finns andra regler kopplade till ditt färdtjänsttillstånd. Men det ska vara rimliga regler.
+    
+                    Är du under 18 år så jämför man med hur andra i samma ålder och utan funktionshinder kan resa. Därefter beslutas om du har rätt till färdtjänst.</p>
+            </div>
+
             <h2>Ansök om färdtjänst</h2>
             <p>För att få färdtjänst måste ditt funktionshinder vara bestående - minst tre månader eller längre. Du måste också vara folkbokförd i Stockholms län. Det är Region Stockholm som beslutar om färdtjänst, men det är kommunen som utreder behovet.</p>
+            
+            <button onclick='openInfo(2)' class='infoBtn' id='infoBtn2' aria-controls='info2' aria-expanded='false'>
+                Regler för att ansöka om färdtjänst
+                <span class='plus' id='plus2'>+</span>
+                <span class='minus' id='minus2'>-</span>
+            </button>
+            <div class='info-box' id=info2 tabindex='-1'>
+                <p>Grundkraven för att du ska kunna få färdtjänst är:</p>
+                <ul>
+                    <li>Du ska ha stora svårigheter att förflytta dig på egen hand</li>
+                    <li>Du ska ha svårt att använda vanliga bussar och tåg i kollektivtrafik</li>
+                    <li>Du måste vara skriven som bosatt i den kommun där du ansöker om färdtjänst</li>
+                    <li>Funktionsnedsättningen ska ha funnits ett längre tag, minst 6 månader och det ska förväntas fortsätta.</li>
+                    <li>Även om du håller på med rehabilitering så har du rätt att använda färdtjänst. Tanken är att färdtjänst ska vara en ersättning för den som inte 
+                        kan resa med kollektivtrafiken.</li>
+                    <li>Du får ett beslut. Svaret på din ansökan om färdtjänst får du i ett beslut från färdtjänstnämnden. Inom fjorton dagar skickas ditt färdtjänstkort till 
+                        dig.</li>
+                </ul>
+            </div>
+            
             <h3>Så går det till</h3>
             <ol>
                 <li>Be din läkare om ett läkarintyg. Läkarintyget får inte vara äldre än tre månader.</li>
@@ -135,7 +177,7 @@
                 <nav>
                     <ul>
                         <li><a href="information.html">Information om färdtjänst</a></li>
-                        <li><a href="rules.html">Regler och ansökan</a></li>
+                        <li><a href="information.html">Regler och ansökan</a></li>
                         <li><a href="accessability.html">Tillgänglighetsredogörelse</a></li>
                     </ul>
                 </nav>

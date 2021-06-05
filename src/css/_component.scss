@@ -86,6 +86,7 @@ hr {
         list-style: none;
         margin: 0 auto;
         display: flex;
+        justify-content: space-evenly;
 
         a:hover,
         .current {
@@ -99,9 +100,12 @@ hr {
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 230px;
+            width: 100%;
             height: 120px;
-        
+        }
+
+        a {
+            padding: 1rem;
         }
     }
 
@@ -195,6 +199,16 @@ hr {
         margin: 0;
         width: fit-content;
     }
+
+    .card-section__card1 {
+        background-color: #2E4291;
+        color: #FFFFFF;
+
+        h4,
+        p {
+            color: #FFFFFF;
+        }
+    }
 }
 
 .confirmation-heading {
@@ -228,6 +242,51 @@ aside {
     a {
         text-decoration: underline;
     }
+}
+
+.infoBtn {
+    position: relative;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #2E4291;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    .plus,
+    .minus {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .minus {
+        display: none;
+    }
+}
+
+.info-box {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.8em;
+    border: 1px solid #707070;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#info1,
+#info2 {
+    display: none;
 }
 
 footer {
